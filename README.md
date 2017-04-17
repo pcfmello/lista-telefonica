@@ -1,8 +1,8 @@
 # LISTA TELEFÔNICA
 
 ## Sobre  
-Esse projeto é o resultado do curso AngularJS do [Rodrigo Branas](https://www.linkedin.com/in/rodrigobranas/) 
-presente no [Youtube](https://www.youtube.com/playlist?list=PLQCmSnNFVYnTD5p2fR4EXmtlR6jQJMbPb) com algumas alterações
+Esse projeto é o resultado do curso AngularJS do [Rodrigo Branas](https://www.linkedin.com/in/rodrigobranas/), projeto criado por ele mesmo,
+presente no [Youtube](https://www.youtube.com/playlist?list=PLQCmSnNFVYnTD5p2fR4EXmtlR6jQJMbPb) com algumas alterações minhas
 e criado com o boilerplate NG6-Starter.
 
 ## Modificações  
