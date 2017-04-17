@@ -1,9 +1,132 @@
 <navbar></navbar>
-<header>
+<header class="container">
   <hero></hero>
 </header>
-<main>
-  <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
+<main class="container">
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <h3 class="panel-heading">Adicionar Contato</h3>
+      <div class="panel-body">
+
+        <form class="form-horizontal" name="phoneForm" novalidate>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text" class="form-control"
+                     name="name"
+                     ng-model="$ctrl.contact.name"
+                     placeholder="Seu nome"
+                     ng-minlength="5"
+                     ng-pattern="/^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/"
+                     ng-required="true">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <input type="text"
+                     class="form-control"
+                     name="phone"
+                     ng-model="$ctrl.contact.phone"
+                     placeholder="Seu telefone (99)9999-9999 ou (99)99999-9999"
+                     ng-pattern="/^\([1-9]{2}\)[0-9]{4,5}-[0-9]{4}$/"
+                     ng-required="true">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <select class="form-control"
+                      name="phoneCompany"
+                      ng-model="$ctrl.contact.phoneCompany"
+                      ng-options="phoneCompany.name group by phoneCompany.category for phoneCompany in $ctrl.phoneCompanies"
+                      ng-required="true">
+                <option value="">Selecione uma operadora</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-12">
+              <select class="form-control color-names"
+                      name="color"
+                      ng-model="$ctrl.contact.color"
+                      ng-options="color.name for color in $ctrl.colors"
+                      ng-required="true">
+                <option value="">Selecione uma cor</option>
+              </select>
+            </div>
+          </div>
+
+          <!--Errors message alert box-->
+          <div class="alert alert-danger" role="alert" ng-if="$ctrl.isSubmittedForm && phoneForm.$invalid">
+            <!--Name input validate messages-->
+            <div ng-messages="phoneForm.name.$error">
+              <div ng-message="required">
+                Preencha seu nome
+              </div>
+              <div ng-message="pattern">
+                O nome só pode conter letras
+              </div>
+              <div ng-message="minlength">
+                O nome deve conter no mínimo 5 caracteres
+              </div>
+            </div>
+
+            <div ng-messages="phoneForm.phone.$error">
+              <div ng-message="required">
+                Preencha seu telefone
+              </div>
+              <div ng-message="pattern">
+                Número de telefone fora do padrão
+              </div>
+            </div>
+
+            <div ng-messages="phoneForm.phoneCompany.$error">
+              <div ng-message="required">
+                Escolha sua operadora de telefonia
+              </div>
+            </div>
+
+            <div ng-messages="phoneForm.color.$error">
+              <div ng-message="required">
+                Escolha sua cor preferida
+              </div>
+            </div>
+          </div>
+
+          <button type="reset" class="btn btn-default" ng-click="$ctrl.resetForm(phoneForm)">Cancelar</button>
+          <button type="button" class="btn btn-primary"
+                  ng-click="$ctrl.add($ctrl.contact, phoneForm)">Adicionar</button>
+          <button type="button" class="btn btn-danger" ng-if="$ctrl.hasSelectedContact($ctrl.contacts)"
+                  ng-click="$ctrl.remove($ctrl.contacts)">Excluir</button>
+        </form>
+      </div>
+
+      <div class="text-center" ng-if="!$ctrl.hasContacts($ctrl.contacts)">Lista de contatos vazia</div>
+      <table class="table" ng-if="$ctrl.hasContacts($ctrl.contacts)">
+        <thead>
+          <tr>
+            <th><input type="checkbox" ng-model="$ctrl.isSelectedContacts" ng-click="$ctrl.selectedAllContacts($ctrl.contacts)"/></th>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th>Operadora</th>
+            <th>Cor</th>
+            <th>Data de cadastro</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-class="{ 'phone-company-selected bold': contact.isSelected }" ng-repeat="contact in $ctrl.contacts">
+            <td><input type="checkbox" ng-model="contact.isSelected"/></td>
+            <td>{{ contact.name | uppercase}}</td>
+            <td>{{ contact.phone }}</td>
+            <td>{{ contact.phoneCompany.name | lowercase }}</td>
+            <th><div style="width: 20px; height: 20px;" ng-style="{ 'background-color': contact.color.name }"></div></th>
+            <td>{{ contact.date | date: 'dd/MM/yyyy' }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
   </div>
 </main>
+<footer class="text-center">
+  <footer></footer>
+</footer>
+

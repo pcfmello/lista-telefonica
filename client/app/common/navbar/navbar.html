@@ -1,8 +1,10 @@
-<nav class="navbar">
-  <div class="logo">
-    <h1><a ui-sref="home">{{ $ctrl.name }}</a></h1>
-  </div>
-  <div class="nav-links">
-    <span><a ui-sref="about">about</a></span>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/home">
+        <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+        {{ $ctrl.name }}
+      </a>
+    </div>
   </div>
 </nav>

@@ -1,6 +1,6 @@
 class HeroController {
   constructor() {
-    this.name = 'hero';
+    this.name = 'Lista Telefônica';
   }
 }
 

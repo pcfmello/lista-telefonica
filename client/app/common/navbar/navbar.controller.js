@@ -1,6 +1,8 @@
 class NavbarController {
   constructor() {
-    this.name = 'navbar';
+    let ctrl = this;
+
+    ctrl.name = 'Lista Telefônica App';
   }
 }
 
