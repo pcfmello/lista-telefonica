@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3329db99-e860-43ac-a8b1-8252721de1b4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/app.html" afterPath="$PROJECT_DIR$/client/app/app.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/app.js" afterPath="$PROJECT_DIR$/client/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/app.scss" afterPath="$PROJECT_DIR$/client/app/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/common/common.js" afterPath="$PROJECT_DIR$/client/app/common/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/common/hero/hero.controller.js" afterPath="$PROJECT_DIR$/client/app/common/hero/hero.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/common/hero/hero.html" afterPath="$PROJECT_DIR$/client/app/common/hero/hero.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/common/navbar/navbar.controller.js" afterPath="$PROJECT_DIR$/client/app/common/navbar/navbar.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/common/navbar/navbar.html" afterPath="$PROJECT_DIR$/client/app/common/navbar/navbar.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/common/navbar/navbar.scss" afterPath="$PROJECT_DIR$/client/app/common/navbar/navbar.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/about/about.html" afterPath="$PROJECT_DIR$/client/app/components/about/about.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/home/home.controller.js" afterPath="$PROJECT_DIR$/client/app/components/home/home.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/home/home.html" afterPath="$PROJECT_DIR$/client/app/components/home/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/app/components/home/home.scss" afterPath="$PROJECT_DIR$/client/app/components/home/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/index.html" afterPath="$PROJECT_DIR$/client/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/app/components/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -72,6 +57,16 @@
               <folding>
                 <element signature="n#style#0;n#div#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" column="151" lean-forward="false" selection-start-line="8" selection-start-column="151" selection-end-line="8" selection-end-column="151" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -125,6 +120,7 @@
         <option value="$PROJECT_DIR$/client/app/components/home/home.scss" />
         <option value="$PROJECT_DIR$/client/app/components/home/home.controller.js" />
         <option value="$PROJECT_DIR$/client/app/components/home/home.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -412,19 +408,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1492194184080</updated>
-      <workItem from="1492194185749" duration="49855000" />
+      <workItem from="1492194185749" duration="51237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49855000" />
+    <option name="totallyTimeSpent" value="51237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1211" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26666668" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26598465" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -719,6 +715,14 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#th#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#main#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="151" lean-forward="false" selection-start-line="8" selection-start-column="151" selection-end-line="8" selection-end-column="151" />
+          <folding />
         </state>
       </provider>
     </entry>
